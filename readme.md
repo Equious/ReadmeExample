@@ -105,7 +105,7 @@ Please also include steps needed to run appropriate tests included in scope.
 Example:
 
 Build:
-```
+```bash
 forge init
 
 forge install OpenZeppelin/openzeppelin-contracts
