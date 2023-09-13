@@ -28,7 +28,7 @@ This section should give auditors a feeling for what the protocol does, it's pri
 
 Example:
 
-```bash
+```
 About
 
 This project is meant to enable smart contract auditors (sellers) and smart contract protocols
@@ -46,7 +46,7 @@ Detail which roles are included within your protocol, for example 'owner', 'borr
 
 Example:
 
-```bash
+```
 Actors:
     Buyer: The purchaser of services, in this scenario, a project purchasing an audit.
     Seller: The seller of services, in this scenario, an auditor willing to audit a project.
@@ -105,7 +105,7 @@ Please also include steps needed to run appropriate tests included in scope.
 Example:
 
 Build:
-```bash
+```
 forge init
 
 forge install OpenZeppelin/openzeppelin-contracts
@@ -125,8 +125,8 @@ Forge test
 Please clearly detail **all** currently recognized issues or vulnerabilities within the scope submitted. Please be thorough and precise, following the end of the 48-hour Kick-Off period, these Known Issues will be immutable for the duration of the contest.
 
 Example:
-```bash
-Known Issues:
+
+`Known Issues:
 - Addresses other than the zero address (for example 0xdead) could prevent disputes from being resolved -
 Before the buyer deploys a new Escrow, the buyer and seller should  agree to the terms for the Escrow. If the
 buyer accidentally or maliciously deploys an Escrow with incorrect arbiter details, then the seller could refuse
@@ -151,6 +151,4 @@ to supply the buyer with their services.
 
 - User error such as buyer calling confirmReceipt too soon
 
-- Non-tokenAddress funds locked
-```
-
+- Non-tokenAddress funds locked`
